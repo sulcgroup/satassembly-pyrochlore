@@ -1,0 +1,97 @@
+##############################
+####  PROGRAM PARAMETERS  ####
+##############################
+backend = CPU
+backend_precision = double
+#debug = 1
+seed = 10
+ensemble = NVT
+delta_translation = 0.1
+delta_rotation = 0.1
+
+
+narrow_type = 0
+##############################
+####    SIM PARAMETERS    ####
+##############################
+newtonian_steps = 103
+diff_coeff = 0.1
+thermostat = john
+
+sim_type = MD
+dt = 0.001
+verlet_skin = 0.05
+
+#sim_type = MC2
+move_1 = {
+  type = MCMovePatchyShape
+  #type = translation
+  delta = 0.1
+  prob = 1
+  delta_translation = 0.1
+  delta_rotation = 0.1
+}
+
+
+
+no_stdout_energy = 0
+restart_step_counter = 1
+energy_file = energy.dat
+print_conf_interval = 1e7
+print_energy_every = 1e5
+time_scale = linear
+
+PATCHY_alpha = 0.12
+no_multipatch = 1
+steps = 5e10
+check_energy_every = 10000
+check_energy_threshold = 1.e-4
+
+T = 0.123
+refresh_vel = 1
+############################
+######## PATCHY SETUP ######
+############################
+#interaction_type = PLPATCHY_KF_like
+interaction_type = PatchyShapeInteraction
+
+#plugin_search_path = /home/petr/projects/venice/SIMULATION/oxDNA_valence_ico2/oxdna-code/oxDNA/contrib/romano/
+#plugin_search_path = /home/petr/projects/venice/SAXS_profiles/latest_oxDNA/oxdna-code/oxDNA/contrib/romano 
+plugin_search_path =   /home/petr/projects/venice/SAXS/oxDNA/contrib/romano
+
+#plugin_search_path = /home/petr/workspace/latest_patches/oxdna-code/oxDNA/contrib/romano/
+#interaction_type = PLPATCHY
+shape = sphere
+particle_types_N = 4
+patch_types_N  = 24
+patchy_file = sat24.patch.txt
+particle_file = CRYSTAL.particles.txt
+same_type_bonding = 1
+use_torsion = 0
+interaction_tensor = 0
+#interaction_tensor_file = REFIX.int.tensor.txt
+
+
+PATCHY_radius = 0.4
+
+lastconf_file = last_conf.BIG.dat
+
+##############################
+####    INPUT / OUTPUT    ####
+##############################
+topology = BIG.top
+conf_file = BIG.conf
+trajectory_file = trajectory.dat
+
+
+
+data_output_1 = {
+ name = clusters.txt
+ print_every = 2e6
+ col_1 = {
+   type = PLCluster
+   show_types = 1
+ }
+}
+
+

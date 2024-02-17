@@ -1,0 +1,12 @@
+#Compilation instructions (patchy particle model is included as part of oxDNA simulation pakage, in directory contrib/romano
+
+cd oxdna
+
+mkdir build
+cd build
+cmake ../
+make -j 4
+make romano
+
+
+the binary will then be located in oxdna/build/bin/oxDNA

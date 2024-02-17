@@ -1,0 +1,4 @@
+particle_0 = { 
+ type = 0 
+ patches = 0,1,2,3,4,5 
+ } 
