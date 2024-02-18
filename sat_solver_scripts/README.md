@@ -1,8 +1,8 @@
-##SAT solver script generators:
+**SAT solver script generators**:
 
 Requires python and minisat to be installed
 
-#Usage:
+*Usage*:
 
 In the file sat.py, on line 34 and 35 specify the number of species that will be used; 
 For example, 2 species and 12 colors specify:
