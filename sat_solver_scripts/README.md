@@ -39,8 +39,8 @@ python sat.py problem.sol > problem.sol.converted
 
 In the resulting file, you will have the following information:
 
-*B(X,Y): this means color X and Y interact
-*C(A,B,X): this means patchy particle of type A, patch number B, has color X
+* B(X,Y): this means color X and Y interact
+* C(A,B,X): this means patchy particle of type A, patch number B, has color X
 
 The above solution is listed for all colors and all patches (0 to 5) in all particle types (0 to Na-1), and for all colors (X goes from 0 to Nc-1)
 There are also auxiliary variables P and F printed out. 
