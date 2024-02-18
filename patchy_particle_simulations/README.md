@@ -1,6 +1,6 @@
 **Patchy simulations and source code**
 
-
+The simulation code is in [sim_source_code](sim_source_code/) directory.
 Simulation setups of different solutions are in directories called Nxcy, where x is the number of particle species, and y is the number of colors:
 
 * [N1c1](N1c1/)
