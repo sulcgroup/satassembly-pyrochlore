@@ -1,5 +1,5 @@
 """
-Crystal SAT specification for Petr
+Crystal SAT specification for pyrochlore lattice
 
 "Atoms" are "movable and rotatable", have 6 slots
 "Positions" are fixed in the crystal, have 6 slots and bind according to spec
