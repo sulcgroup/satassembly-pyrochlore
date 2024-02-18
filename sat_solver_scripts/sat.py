@@ -1,7 +1,7 @@
 """
 Crystal SAT specification for pyrochlore lattice
 
-"Atoms" are "movable and rotatable", have 6 slots
+"Atoms = nanoparticles" are "movable and rotatable", have 6 slots (patches)
 "Positions" are fixed in the crystal, have 6 slots and bind according to spec
 The problem has 2 parts:
 A. find color bindings and colorings of position slots where each slot neightbors according to crystal model have
