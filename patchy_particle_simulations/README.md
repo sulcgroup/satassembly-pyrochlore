@@ -24,4 +24,8 @@ colors with other values are complementary with colors such that they sum to 0. 
 what particle type is specified in a file given by option `particle_file`.
 
 
+For visualization of the simulations, the python script `conf2mgl.py` in contrib/romano/UTILS directory
+can be used to convert the configuration file in an MGL format file, which can be visualized e.g. with [oxview](https://oxview.org ) or with [cogli2](https://sourceforge.net/projects/cogli1/) tool
+
+
 
