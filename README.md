@@ -7,9 +7,8 @@ This is a online repository for the manuscript. It contains source code for the 
 
 * [Patchy particle simulations](patchy_particle_simulations/)
 
-* [OxDNA Simulations](oxdna_simulations) 
-
-  
+* [oxDNA Simulations](oxdna_simulations) contains a folder with the crystal stability simulations, and the relaxed monomer.
+To assemble the crystall simulation files you have to run the `./oxdna_simulations/assemble.sh` file.   
 
 
 
